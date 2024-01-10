@@ -16,7 +16,9 @@
         Chews.
       </p>
 
-      <ButtonLg class="mt-6 z-10">Order Now</ButtonLg>
+      <ButtonLg @open-contact-popup="openPopUp" class="mt-6 z-10"
+        >Order Now</ButtonLg
+      >
     </div>
     <img
       class="absolute max-w-64 bottom-44 left-1/2 transform -translate-x-1/2 xs:mx-auto sm:left-auto sm:right-0 sm:max-w-85 md:right-0 lg:-right-24 lg:max-w-96 sm:bottom-0"
@@ -29,6 +31,11 @@
 <script>
 import ButtonLg from './ButtonLg.vue'
 export default {
+  methods: {
+    openPopUp() {
+      this.$emit('open-hero-popup')
+    },
+  },
   components: { ButtonLg },
 }
 </script>

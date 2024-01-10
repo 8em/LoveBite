@@ -1,6 +1,6 @@
 <template>
   <div
-    class="pop-up fixed z-50 rounded-2xl p-6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-lb-primary"
+    class="pop-up overflow-hidden fixed z-50 rounded-2xl p-6 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-lb-primary"
   >
     <div class="flex items-center justify-between">
       <h5 class="text-2xl text-lb-rot font-medium">{{ title }}</h5>

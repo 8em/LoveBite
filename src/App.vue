@@ -1,5 +1,10 @@
 <template>
   <div class="max-w-screen-xl mx-auto px-4 font-default">
+    <div
+      @click="closePopup"
+      class="fixed top-0 right-0 opacity-70 w-full bg-lb-rot h-svh z-50"
+      v-if="popUpIsOpen"
+    ></div>
     <ContactPopUp
       v-if="popUpIsOpen"
       @close-popup="closePopup"
@@ -7,7 +12,7 @@
     />
 
     <MainHeader @open-popup="openPopup" />
-    <TheHome />
+    <TheHome @open-popup="openPopup" />
   </div>
 </template>
 
