@@ -1,15 +1,19 @@
 <template>
   <div class="max-w-screen-xl mx-auto px-4 font-default">
-    <div
-      @click="closePopup"
-      class="fixed top-0 right-0 opacity-70 w-full bg-lb-rot h-svh z-50"
-      v-if="popUpIsOpen"
-    ></div>
-    <ContactPopUp
-      v-if="popUpIsOpen"
-      @close-popup="closePopup"
-      title="Contact us"
-    />
+    <Transition>
+      <div
+        @click="closePopup"
+        class="fixed top-0 right-0 opacity-70 w-full bg-lb-rot h-svh z-50"
+        v-if="popUpIsOpen"
+      ></div>
+    </Transition>
+    <Transition>
+      <ContactPopUp
+        v-if="popUpIsOpen"
+        @close-popup="closePopup"
+        title="Contact us"
+      />
+    </Transition>
 
     <MainHeader @open-popup="openPopup" />
     <TheHome @open-popup="openPopup" />
@@ -38,3 +42,15 @@ export default {
   },
 }
 </script>
+
+<style>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>

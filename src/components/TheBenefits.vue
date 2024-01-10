@@ -6,10 +6,10 @@
       :key="idx + benefit.title"
     >
       <div>
-        <h5 class="font-medium mb-1.5 lg:mb-3 text-lg lg:text-xl">
+        <h5 class="font-medium mb-1.5 lg:mb-3 text-mg lg:text-lg">
           {{ benefit.title }}
         </h5>
-        <p class="text-sm opacity-70">{{ benefit.description }}</p>
+        <p class="text-xs lg:text-sm opacity-70">{{ benefit.description }}</p>
       </div>
     </li>
   </div>
@@ -21,21 +21,23 @@ export default {
     return {
       benefits: {
         benefit1: {
-          title: 'Clean',
+          title: 'Lactose, Gluten, and Grain-Free:',
           description:
-            'Free from: Caffeine, animal traces, artificial ingredients, and additives.',
+            'Pure Goodness: Our cheese is a natural delight, free from lactose, gluten, and grains, ensuring a wholesome and easily digestible treat.',
         },
         benefit2: {
-          title: 'Natural',
-          description: 'Bones flakes away releasing tiny fibres of wood,',
+          title: 'High Protein:',
+          description:
+            'Power Packed: LoveBite cheese is a high-protein indulgence, promoting muscle health and overall vitality for your furry friends.',
         },
         benefit3: {
-          title: 'High Protein',
-          description: 'Suitable for overweight dogsand dogs with allergies',
+          title: 'Dental Health',
+          description: `Chew for Health: Our cheese supports dental wellness, providing a satisfying chew that helps maintain your pet's oral hygiene.`,
         },
         benefit4: {
-          title: 'Dental Health',
-          description: 'Suitable for overweight dogsand dogs with allergies',
+          title: 'Fresh Breath:',
+          description:
+            'Breath of Freshness: LoveBite cheese not only delights the taste buds but also contributes to fresh breath, making those furry kisses even more enjoyable.',
         },
       },
     }
