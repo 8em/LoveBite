@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 gap-4 lg:gap-6 lg:grid-cols-4">
+  <div class="mt-6 grid grid-cols-2 gap-4 lg:gap-6 lg:grid-cols-4">
     <li
       class="list-none p-4 lg:p-8 bg-slate-200 rounded-2xl"
       v-for="(benefit, idx) in benefits"
@@ -31,7 +31,7 @@ export default {
             'Power Packed: LoveBite cheese is a high-protein indulgence, promoting muscle health and overall vitality for your furry friends.',
         },
         benefit3: {
-          title: 'Dental Health',
+          title: 'Dental Health:',
           description: `Chew for Health: Our cheese supports dental wellness, providing a satisfying chew that helps maintain your pet's oral hygiene.`,
         },
         benefit4: {
