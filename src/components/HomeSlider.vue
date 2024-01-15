@@ -34,14 +34,14 @@ export default {
   data() {
     return {
       slidesDesk: [
-        'src/assets/images/banner1.png',
-        'src/assets/images/banner2.png',
-        'src/assets/images/banner3.png',
+        './src/assets/images/banner1.png',
+        './src/assets/images/banner2.png',
+        './src/assets/images/banner3.png',
       ],
       slidesMobile: [
-        'src/assets/images/banner1-mobile.png',
-        'src/assets/images/banner2-mobile.png',
-        'src/assets/images/banner3-mobile.png',
+        './src/assets/images/banner1-mobile.png',
+        './src/assets/images/banner2-mobile.png',
+        './src/assets/images/banner3-mobile.png',
       ],
       slides: null,
     }
