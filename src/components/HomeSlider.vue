@@ -10,11 +10,7 @@
     @slideChange="onSlideChange"
   >
     <swiper-slide v-for="(slide, idx) in slides" :key="idx">
-      <<<<<<< HEAD
       <img :src="`../assets/images/${slide}`" />
-      =======
-      <img :src="`/src/assets/images/${slide}`" />
-      >>>>>>> bed16b4510d6448f33340b7d75e3f4e9ce3dc2ea
     </swiper-slide>
   </swiper>
 </template>
