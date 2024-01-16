@@ -10,7 +10,7 @@
     @slideChange="onSlideChange"
   >
     <swiper-slide v-for="(slide, idx) in slides" :key="idx">
-      <img :src="slide" />
+      <img :src="`/src/assets/images/${slide}`" />
     </swiper-slide>
   </swiper>
 </template>
@@ -34,14 +34,14 @@ export default {
   data() {
     return {
       slidesDesk: [
-        './src/assets/images/banner1.png',
-        './src/assets/images/banner2.png',
-        './src/assets/images/banner3.png',
+        'banner1.png',
+        'banner2.png',
+        'banner3.png',
       ],
       slidesMobile: [
-        './src/assets/images/banner1-mobile.png',
-        './src/assets/images/banner2-mobile.png',
-        './src/assets/images/banner3-mobile.png',
+        'banner1-mobile.png',
+        'banner2-mobile.png',
+        'banner3-mobile.png',
       ],
       slides: null,
     }
