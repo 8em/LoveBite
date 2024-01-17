@@ -33,20 +33,23 @@
       />
 
       <!-- Email -->
-      <label class="text-sm opacity-60" for="email">Email: *</label>
-      <input
-        @input="validateEmail"
-        id="email"
-        v-model="email.value"
-        class="p-2 my-2 w-full rounded-md bg-orange-50"
-        placeholder="your_email@gmail.com"
-        type="text"
-      />
-      <Transition>
-        <p v-if="checkEmail" class="mb-2 text-xs opacity-80">
-          Wrong email format
-        </p>
-      </Transition>
+      <div class="relative">
+        <label class="text-sm opacity-60" for="email">Email: *</label>
+        <input
+          @input="validateEmail"
+          id="email"
+          v-model="email.value"
+          class="p-2 my-2 w-full rounded-md bg-orange-50"
+          placeholder="your_email@gmail.com"
+          type="text"
+        />
+        <Transition>
+          <CheckMarkIcon
+            v-if="!checkEmail"
+            class="absolute top-1/2 right-2 mb-2 text-xs opacity-80"
+          />
+        </Transition>
+      </div>
 
       <!-- Company Name -->
       <label class="text-sm opacity-60" for="company_name">Company Name:</label>
@@ -87,9 +90,10 @@
 <script>
 import ButtonLg from './ButtonLg.vue'
 import CloseBtn from './CloseBtn.vue'
+import CheckMarkIcon from './CheckMarkIcon.vue'
 
 export default {
-  components: { CloseBtn, ButtonLg },
+  components: { CloseBtn, ButtonLg, CheckMarkIcon },
   props: {
     title: String,
   },
