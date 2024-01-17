@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.iti__flag {
+  background-image: url('path/to/flags.png');
+}
+
+@media (min-resolution: 2x) {
+  .iti__flag {
+    background-image: url('path/to/flags@2x.png');
+  }
+}
