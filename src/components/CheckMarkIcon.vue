@@ -2,8 +2,8 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
-    width="22px"
-    height="22px"
+    width="18px"
+    height="18px"
   >
     <path
       fill-rule="evenodd"

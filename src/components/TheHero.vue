@@ -16,9 +16,12 @@
         Chews.
       </p>
 
-      <ButtonLg @open-contact-popup="openPopUp" class="mt-6 z-10"
-        >Order Now</ButtonLg
-      >
+      <ButtonLg
+        :text="'Contact Us'"
+        :isActiveButton="true"
+        @open-contact-popup="openPopUp"
+        class="mt-6 z-10"
+      />
     </div>
     <img
       class="absolute max-w-64 bottom-44 left-1/2 transform -translate-x-1/2 xs:mx-auto sm:left-auto sm:right-0 sm:max-w-85 md:right-0 lg:-right-24 lg:max-w-96 sm:bottom-0"

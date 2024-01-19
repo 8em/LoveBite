@@ -18,6 +18,7 @@ export default {
         'lb-primary': '#FBE7D8',
         'lb-yellow': '#F8AA17',
         'lb-pink': '#EC7BAE',
+        'lb-grey': '#B7B7B7',
         'lb-rot': '#564320',
         'lb-bg-beige': '#FFE4C4',
         'btn-default': '#1BA65E',

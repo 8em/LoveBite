@@ -1,9 +1,8 @@
 <template>
   <button
-    @click="openContactPopup"
     :class="[
       'inline-block max-w-40 py-4 font-medium text-sm rounded-lg',
-      isActiveButton
+      readyToSend
         ? 'drop-shadow-xl hover:drop-shadow-none transition-all bg-btn-default hover:bg-btn-hovered text-white'
         : 'bg-btn-inactive text-gray-500 bg-lb-grey pointer-events-none cursor-not-allowed',
     ]"
@@ -15,7 +14,7 @@
 <script>
 export default {
   props: {
-    isActiveButton: {
+    readyToSend: {
       type: Boolean,
       default: true,
     },

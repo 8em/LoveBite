@@ -3,7 +3,7 @@
     class="flex sticky w-full top-4 bottom-auto z-30 max-w-screen-xl items-center rounded-2xl justify-between bg-lb-primary p-4 my-4"
   >
     <Logo />
-    <ButtonMd @click="openPopup">Order Now</ButtonMd>
+    <ButtonMd text="Contact Us" @click="openPopup" />
   </header>
 </template>
 
