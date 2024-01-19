@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [Vue()],
   resolve: {
     alias: {
-      '@': '/src',
+      base: '',
     },
   },
 })

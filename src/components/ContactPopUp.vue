@@ -8,7 +8,6 @@
     </div>
 
     <div class="pt-4">
-      <!-- Name -->
       <div class="relative">
         <label class="text-sm opacity-60" for="name">Name: *</label>
         <input
@@ -27,7 +26,6 @@
         </Transition>
       </div>
 
-      <!-- Phone -->
       <div class="flex mb-2 relative flex-col">
         <label class="text-sm mb-2 opacity-60" for="number"
           >Phone Number: *</label
@@ -48,7 +46,6 @@
         </Transition>
       </div>
 
-      <!-- Email -->
       <div class="relative">
         <label class="text-sm opacity-60" for="email">Email: *</label>
         <input
@@ -68,7 +65,6 @@
         </Transition>
       </div>
 
-      <!-- Company Name -->
       <div class="relative">
         <label class="text-sm opacity-60" for="company_name"
           >Company Name:</label
@@ -89,7 +85,6 @@
         </Transition>
       </div>
 
-      <!-- Subject -->
       <div class="relative">
         <label class="text-sm opacity-60" for="subject">Subject: *</label>
         <input
@@ -108,7 +103,6 @@
         </Transition>
       </div>
 
-      <!-- Message -->
       <div class="relative">
         <label class="text-sm opacity-60" for="message">Message: *</label>
         <textarea
@@ -126,7 +120,6 @@
         </Transition>
       </div>
 
-      <!-- Submit Form -->
       <ButtonSubmitLg
         :text="'Submit'"
         :readyToSend="readyToSend"
@@ -142,45 +135,20 @@ import CloseBtn from './CloseBtn.vue'
 import CheckMarkIcon from './CheckMarkIcon.vue'
 import intlTelInput from 'intl-tel-input'
 import 'intl-tel-input/build/css/intlTelInput.css'
+import 'intl-tel-input/build/js/utils.js'
 
 export default {
   components: { CloseBtn, CheckMarkIcon, ButtonSubmitLg },
-  props: {
-    title: String,
-  },
+  props: { title: String },
 
   data() {
     return {
-      name: {
-        type: String,
-        value: '',
-        required: true,
-      },
-      phone: {
-        type: String,
-        value: '',
-        required: true,
-      },
-      email: {
-        type: String,
-        value: '',
-        required: true,
-      },
-      company_name: {
-        type: String,
-        value: '',
-        required: false,
-      },
-      subject: {
-        type: String,
-        value: '',
-        required: true,
-      },
-      message: {
-        type: String,
-        value: '',
-        required: true,
-      },
+      name: { type: String, value: '', required: true },
+      phone: { type: String, value: '', required: true },
+      email: { type: String, value: '', required: true },
+      company_name: { type: String, value: '', required: false },
+      subject: { type: String, value: '', required: true },
+      message: { type: String, value: '', required: true },
       isPhoneNumberValid: false,
     }
   },
@@ -189,11 +157,9 @@ export default {
     closePopUp() {
       this.$emit('close-popup')
     },
-
     validateEmail() {
       this.checkEmail
     },
-
     validatePhoneNumber() {
       const input = document.querySelector('#number')
       const iti = window.intlTelInputGlobals.getInstance(input)
@@ -208,7 +174,6 @@ export default {
         (input) => !input.required || input.value.trim().length >= 3
       )
     },
-
     checkEmail() {
       const emailValidation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
       return !emailValidation.test(this.email.value)
@@ -228,10 +193,9 @@ export default {
         },
         showSelectedDialCode: false,
         countrySearch: false,
-        autoPlaceholder: 'aggressive',
+        autoPlaceholder: 'polite',
         formatAsYouType: true,
         formatOnDisplay: true,
-        utilsScript: './node_modules/intl-tel-input/build/js/utils.js',
       })
     }
   },
