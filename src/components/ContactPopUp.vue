@@ -231,8 +231,7 @@ export default {
         autoPlaceholder: 'aggressive',
         formatAsYouType: true,
         formatOnDisplay: true,
-        utilsScript:
-          './node_modules/intl-tel-input/build/js/utils.js?1705492222198',
+        utilsScript: './node_modules/intl-tel-input/build/js/utils.js',
       })
     }
   },
