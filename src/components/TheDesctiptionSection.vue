@@ -11,12 +11,15 @@
       <span class="text-lb-pink uppercase font-semibold">Is it natural?</span>
       <h2 class="text-lb-yellow text-5xl font-bold my-4">A 100% natural</h2>
       <p class="text-md">
-        dog treat that not only helps your dog to develop but also helps small
-        scale farmers and entire communities to grow. Sourced from the Colombian
-        Valleys where the best coffee beans in the world are harvested at high
-        altitude, goodWood is manufactured from the high quality coffee wood
-        discarded by the farming process providing an additional source of
-        revenue for local farmers.
+        Delight your pets with our exquisite Himalayan Cheese, carefully curated
+        for their well-being. With low lactose content and a rich source of
+        high-quality protein, our cheese is a 100% natural, preservative-free
+        indulgence. Meticulously aged for 3 to 7 months, this culinary
+        masterpiece guarantees your furry friends a prolonged enjoyment of their
+        favorite delicacy. <br /><br />
+        Each unique flavor adds a special twist to the timeless taste of
+        tradition, promising a delightful and enriching experience for your
+        beloved pets
       </p>
     </div>
   </div>

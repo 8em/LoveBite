@@ -3,17 +3,17 @@
     class="bg-hero-pattern h-max bg-cover bg-right-bottom overflow-hidden relative flex flex-col p-6 pb-56 sm:p-8 md:pb-16 md:p-16 rounded-2xl"
   >
     <h1 class="text-xl mb-60 sm:mb-0 md:text-4xl text-lb-rot">
-      Kość z sera <br />
-      <span class="text-4xl md:text-8xl font-bold text-lb-yellow"
-        >Himalajskiego</span
+      For Dogs <br />
+      <span class="text-4xl md:text-7xl tracking-tight font-bold text-lb-yellow"
+        >Himalayan Cheese</span
       >
     </h1>
     <div
       class="z-10 absolute flex flex-col p-6 left-0 right-0 bottom-0 md:p-0 md:m-0 bg-lb-bg-beige sm:bg-transparent sm:relative sm:mt-6 backdrop-blur-md sm:backdrop-blur-none"
     >
       <p class="mt-0 sm:mt-4 max-w-96 inline-block">
-        Indulge your canine companion with the authentic taste of Himalayan Dog
-        Chews.
+        A Wholesome Treat Crafted <br />
+        with Love and Tradition.
       </p>
 
       <ButtonLg
