@@ -3,13 +3,16 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/8em/LoveBite/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
+    
     "preview": "vite preview"
   },
+  
   "dependencies": {
     "intl-tel-input": "^19.1.0",
     "swiper": "^11.0.5",
